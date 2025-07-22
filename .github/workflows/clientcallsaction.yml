@@ -17,6 +17,6 @@ jobs:
 # https://docs.github.com/en/actions/reference/workflow-syntax-for-github-actions#jobsjob_iduses
 
       - name: 'Call action'
-        uses: tvdvoorde/actionrepo/.github/actions/dosomething/action.yml@main
+        uses: tvdvoorde/actionrepo/.github/actions/dosomething@main
         with:
           comment: "my comment"
