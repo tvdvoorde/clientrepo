@@ -1,9 +1,20 @@
+name: clientcallsaction
+on:
+  workflow_dispatch:
 
+jobs:
+  clientcallsaction:
+    runs-on: ubuntu-latest
 
+    steps:
+      - uses: actions/checkout@v4
 
+      - name: Run a multi-line script
+        run: |
+          touch test.txt
+          ls -ltr 
 
-
-    - name: 'Manage project'
-      uses: afkl-airspace/cicc-infra-iac/.github/actions/fluffy@fluffy/v1
-      with:
-        gcp_project_id: ${{ vars.GCP_PROJECT_ID }}
+      - name: 'Manage project'
+        uses: tvdvoorde/actionrepo/.github/actions/dosomething/action.yml@main
+        with:
+          comment: "my comment"
