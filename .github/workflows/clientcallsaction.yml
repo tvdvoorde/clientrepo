@@ -20,3 +20,4 @@ jobs:
         uses: tvdvoorde/actionrepo/.github/actions/dosomething@main
         with:
           comment: "my comment"
+          appsecret: ${{ secrets.APPSECRET }}
